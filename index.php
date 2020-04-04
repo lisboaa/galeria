@@ -1,5 +1,5 @@
 <?php require './pages/header.php';
-      require './config/config.php';
+      require './config/conexao.php';
 ?>
 <div class="container-fluid">
     <div class="jumbotron">
