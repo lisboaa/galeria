@@ -1,10 +1,10 @@
 <?php
 session_start();
-
 try {
-    $pdo = new PDO("mysql:dbname=classificados;host=db", "root", "root");
-} catch (PDOException $e) {
-    echo "FALHOU: ".$e->getMessage();
-    exit;
+    define('DB_NAME', 'classificados');
+    define('DB_HOST', 'db');
+    define('DB_USER', 'root');
+    define('DB_PASS', 'root');
+} catch (PDOException $exception) {
+    echo "Erro com o banco de dados". $exception->getMessage();
 }
-?>
