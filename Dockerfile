@@ -5,4 +5,7 @@ RUN apt-get update --fix-missing
 RUN apt-get install -y curl
 
 
+
+RUN rewrite headers
+
 WORKDIR /var/www/html

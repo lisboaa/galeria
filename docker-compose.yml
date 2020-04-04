@@ -10,7 +10,7 @@ services:
       MYSQL_USER: "root"
       MYSQL_PASSWORD: "root"
     ports:
-      - "33064:3306"
+      - "33066:3306"
     volumes:
       - dbphp-docker:/var/lib/mysql
 

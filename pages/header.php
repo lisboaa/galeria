@@ -1,4 +1,4 @@
-<?php require './config/config.php';
+<?php require __DIR__ . '/../config/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,17 +17,17 @@
     <ul class="navbar-nav ml-auto">
         <?php if(isset($_SESSION['cLogin']) && !empty($_SESSION['cLogin'])): ?>
             <li class="nav-item">
-                <a class="nav-link">Meus anuncios</a>
+                <a class="nav-link" href="pages/meus-anuncios.php">Meus anuncios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Sair</a>
+                <a class="nav-link" href="pages/sair.php">Sair</a>
             </li>
         <?php else: ?>
             <li class="nav-item">
-                <a class="nav-link">Cadastre-se</a>
+                <a class="nav-link" href="pages/cadastrar.php">Cadastre-se</a>
             </li>
             <li>
-                <a class="nav-link">Login</a>
+                <a class="nav-link" href="pages/login.php">Login</a>
             </li>        
         <?php endif; ?>
     </ul>
